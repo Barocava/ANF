@@ -277,6 +277,23 @@ main {
 
   div {
    
-    max-width: 100%;
-    width: 100%;
+max-width: 100%;
+   
+width: 100%;
+  }
+
+
+  /* 
+  .col-12 {
+    min-width: 350px
+  } */
+
+
+
+  .col{
+    min-width: 350px
+  }
+
+  .col-lg-4{
+    width: 200px;
   }
