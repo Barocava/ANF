@@ -5,33 +5,19 @@
 }
 
 :root {
-    /* --ancho-maximo: 2560px; */ /* Define una variable CSS llamada --color-primario */
+    --ancho-maximo: 1300px;
   }
-
-body {
-    display: flex;
-    flex-direction: column;
-}
-
-.nav {
-    
-    background-color: #bcadade7;
-    padding: 0.5rem;
-    display: flex;
-    justify-content: left;
-}
 
 li {
     list-style-type: none;
 }
 
 a {
-    text-decoration: none; /* Elimina el subrayado */
+    text-decoration: none;
     color: white;
 }
 
 main {
-    /* height: 300px; */
     background-color: #81ff0b00;
     display: flex;
     flex-direction: column;
@@ -39,302 +25,17 @@ main {
     align-items: center;
 }
 
-
-.top {
+div {
     max-width: 100%;
-    gap: 2rem;
-    display: flex;
-    flex-grow: 2;
-    justify-content: center;
+    width: 100%;
 }
 
-.contenedor-menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-
-}
-
-
-.activo {
-    border-bottom: 2px solid #f58f00;
-}
-
-.bi {
-    color: white;
-    font-size: 30px;
-    padding: 1rem;
-}
-
-.bi-house-fill{
-    padding: 0.5rem;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    background-color: rgba(43,48,53,1);
-    padding: 0.5rem;
-
-}
-
-.pie {
+/*---------------nav------------------------*/
+.container-fluid {
     max-width: var(--ancho-maximo);
-    width: 100%;
-    gap:2rem;
-    display: flex;
-    justify-content:space-between;
-    align-items: center;
-    margin: 0.5rem;
-    
 }
 
-.hero_1 {
-    max-width: var(--ancho-maximo);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding-left: 8rem;
-    padding-right: 8rem;
-    padding-block: 1rem;
-}
-
-.hero_font {
-    font-size: 1rem;
-}
-
-.hero_house {
-    width: 300px; 
-    height: 200px; 
-}
-
-.acerca_nosotros {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-block: 20px;
-    width: 100%;
-    
-}
-.collage {
-    /* display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    padding: 1rem;
-    justify-content: center; */
-
-    /* display: grid;
-    width: 1300px;
-    height: 1000px;
-    grid-template-areas: 
-    "img-larga img-larga img-larga img-ancha img-ancha img-ancha img-ancha"
-    "img-larga img-larga img-larga acerca-mensaje acerca-mensaje acerca-mensaje acerca-mensaje"
-    "img-larga img-larga img-larga img-ancha2 img-ancha2 img-ancha2 img-ancha2";
-    grid-template-columns: repeat(7,1fr);
-    grid-template-rows: 1fr 1fr 1fr; */
-
-    display: grid;
-    grid-auto-rows: 300px;
-    grid-template-columns: repeat(auto-fill, minmax(30rem,1fr));
-
-    margin-block: 20px;
-    /* padding: 20px; */
-}
-
-.collage-item {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.collage-item:nth-child(1){
-grid-row-start: span 3;
-}
-
-/* .collage-item:nth-child(3){
-    grid-row-start: span 2;
-} */
-
-.acerca_larga {
-    width: 400px;
-    /* height: 100%; */
-    /* width: 100px;
-    height: 200px; */
-    grid-area: img-larga;
-}
-
-.acerca_ancha {
-    width: 500px;
-    /* height: 100%; */
-    /* width: 300px;
-    height: 200px; */
-    /* margin: 5px; */
-    grid-area: img-ancha;
-}
-
-.acerca_ancha_2 {
-    width: 100%;
-    /* height: 100%; */
-    /* width: 300px;
-    height: 200px; */
-    /* margin: 5px; */
-    grid-area: img-ancha2;
-}
-
-.acerca_pequena {
-    width: 100%;
-    height: 100%;
-    width: 140px;
-    height: 140px;
-    /* margin: 5px; */
-    grid-area: img-corta;
-}
-
-.acerca_pequena_2 {
-    width: 100%;
-    height: 100%;
-    width: 140px;
-    height: 140px;
-    /* margin: 5px; */
-    grid-area: img-pequeña;
-}
-
-.acerca_font {
-    font-size: 0.5rem;
-    font-size: 1.5rem;
-    margin-bottom: 3rem;
-    margin-right: 3rem;
-    margin-left: 3rem;
-}
-
-.acerca_mensaje {
-    /* display: flex;
-    flex-direction: column; */
-    grid-area: acerca-mensaje;
-}
-
-.acerca_botones {
-    display: flex;
-    justify-content: center;
-    gap: 3rem;
-}
-
-.a_boton {
-    padding: 1rem;
-    border: #f58f00 solid 2px;
-    border-radius:0.5rem;
-    background-color: #ffc36f;
-}
-
-.main_formulario {
-    width: 1300px;
-    background-image: url('../img/contacto.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0; /* Elimina el margen predeterminado del cuerpo */
-    height: 100vh; /* Establece la altura al 100% del viewport */
-
-}
-
-.main_formulario_2 {
-    width: 33%;
-    display: flex;
-    justify-content: left;
-}
-
-
-
-.imagen {
-    width: 100%;
-    grid-area: imagen;
-}
-
-.formulario {
-    display: flex;
-    width: 25%;
-    flex-direction: column;
-    justify-content: left;
-    /* margin-left: 2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding-right: 2rem;
-    border-right: 5px solid #cbbaa2; */
-    position: absolute;
-    /* top: 80; 
-    left: 30; */
-    margin: 20px;
-    margin-left: 150px;
-
-}
-
-
-.contacto_img {
-    width: 100%;
-}
-
-.casilla2 {
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-@media screen and (max-width: 1030px) {
-    .main_formulario {
-        width: 100%;
-        background-image: none;
-        background-size: none;
-        background-repeat: none;
-        background-attachment: none;
-        height: 450px;
-    }
-    .main_formulario_2 {
-        width: 100%;
-        justify-content: center;
-    }
-    .formulario {
-        width: 75%;
-        justify-content: center;
-        margin: 10px;
-        position: none;
-    }
-
-
-  }
-
-.planimetria_galeria {
-    width: 200px;
-    height: 100px;
-    /* width: 100%; */
-}
-
-.planimetria_nombre_casa {
-    font-size: 1rem;
-}
-
-.planimetria_descripcion {
-    font-size: 0.5rem;
-}
-
-.galeria {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.galeria_filas {
-    display: flex;
-    justify-content: center;
-    padding: 2rem;
-}
-
-.galeria_carta {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0.5rem;
-    gap:0.5rem
-}
-
+/*---------------Prototipo Casa------------------------*/
 .ficha_casa {
     display: flex;
     flex-direction: column;
@@ -357,6 +58,7 @@ grid-row-start: span 3;
     justify-content: left;
     gap: 0.5rem;
 }
+
 .planos {
     width: 300px;
     height: 300px;
@@ -364,17 +66,65 @@ grid-row-start: span 3;
     margin-top: 1rem;
 }
 
-.container-fluid {
+
+/*---------------Planimetria------------------------*/
+
+.col {
+    min-width: 350px
+}
+
+.col-lg-4 {
+    width: 200px;
+}
+
+/*---------------iconos------------------------*/
+.bi {
+    color: white;
+    font-size: 30px;
+    padding: 1rem;
+}
+
+.bi-house-fill {
+    padding: 0.5rem;
+}
+/*---------------footer------------------------*/
+
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(43, 48, 53, 1);
+    padding: 0.5rem;
+
+}
+
+.pie {
     max-width: var(--ancho-maximo);
+    width: 100%;
+    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+
+}
+
+
+.contenedor-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
 }
 
 .menu-item {
     color: white;
 }
-
 @media screen and (max-width: 768px) {
     .texto {
-      display: none;
+        display: none;
     }
 
     .pie {
@@ -384,27 +134,103 @@ grid-row-start: span 3;
     .contenedor-menu {
         gap: 5rem;
     }
-  }
+}
 
-  div {
-   
-max-width: 100%;
-   
-width: 100%;
-  }
-
-
-  /* 
-  .col-12 {
-    min-width: 350px
-  } */
+/*---------------index------------------------*/
 
 
 
-  .col{
-    min-width: 350px
-  }
 
-  .col-lg-4{
-    width: 200px;
-  }
+/*---------------acerca------------------------*/
+
+.acerca_botones {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.collage {
+
+    display: grid;
+    grid-auto-rows: 300px;
+    grid-template-columns: repeat(auto-fill, minmax(30rem, 1fr));
+
+    margin-block: 20px;
+    /* padding: 20px; */
+}
+
+.collage-item {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.collage-item:nth-child(1) {
+    grid-row-start: span 3;
+}
+
+/* .collage-item:nth-child(3){
+    grid-row-start: span 2;
+} */
+
+
+
+/*--------------contacto-------------------------*/
+
+.main_formulario {
+    width: 1300px;
+    background-image: url('../img/contacto.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    height: 100vh;
+}
+
+.main_formulario_2 {
+    width: 33%;
+    display: flex;
+    justify-content: left;
+}
+
+
+.formulario {
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    justify-content: left;
+    position: absolute;
+    /* top: 80; 
+    left: 30; */
+    margin: 20px;
+    margin-left: 150px;
+
+}
+
+@media screen and (max-width: 1030px) {
+    .main_formulario {
+        width: 100%;
+        background-image: none;
+        background-size: none;
+        background-repeat: none;
+        background-attachment: none;
+        height: 450px;
+    }
+
+    .main_formulario_2 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .formulario {
+        width: 50%;
+        justify-content: center;
+        margin: 10px;
+        position: none;
+    }
+
+
+}
+
+/*---------------------------------------*/
