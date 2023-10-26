@@ -29,30 +29,16 @@
 }
 
 .pie {
-    ul {
-        li {
-            a {
-                text-decoration: none;
-                color: white;
-            }
-        }
+  ul {
+    li {
+      a {
+        text-decoration: none;
+        color: white;
+      }
     }
-
+  }
 }
 
 .menu-item {
   color: white;
-}
-@media screen and (max-width: 768px) {
-  .texto {
-    display: none;
-  }
-
-  .pie {
-    justify-content: center;
-  }
-
-  .contenedor-menu {
-    gap: 5rem;
-  }
 }

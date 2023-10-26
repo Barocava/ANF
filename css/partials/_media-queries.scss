@@ -1,0 +1,45 @@
+// acerca
+@media screen and (max-width: $ancho-maximo) {
+    .contenedor {
+        width: 100%;
+    }
+}
+
+// contacto
+@media screen and (max-width: 1030px) {
+    .main_formulario {
+        width: 100%;
+        background-image: none;
+        background-size: none;
+        background-repeat: none;
+        background-attachment: none;
+        height: 450px;
+    }
+
+    .main_formulario_2 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .formulario {
+        width: 50%;
+        justify-content: center;
+        margin: 10px;
+        position: none;
+    }
+}
+
+// footer
+@media screen and (max-width: 768px) {
+  .texto {
+    display: none;
+  }
+
+  .pie {
+    justify-content: center;
+  }
+
+  .contenedor-menu {
+    gap: 5rem;
+  }
+}
