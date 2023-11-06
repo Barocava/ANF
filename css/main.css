@@ -50,6 +50,18 @@ main {
   justify-content: center;
 }
 
+.mision {
+  justify-content: center;
+  text-align: center;
+  margin: 1rem;
+  width: 75%;
+}
+
+.tamano_boton {
+  font-size: 1.25rem;
+  padding: 1rem;
+}
+
 .main_formulario {
   width: 1300px;
   background-image: url("../img/contacto.jpg");
@@ -172,6 +184,19 @@ main {
     width: 100%;
   }
 }
+@media screen and (max-width: 700px) {
+  .mision {
+    width: 90%;
+    margin: 0.5rem;
+    margin-top: 1.5rem;
+  }
+  .tamano_boton {
+    font-size: 1rem;
+  }
+  .collage {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
+}
 @media screen and (max-width: 1030px) {
   .main_formulario {
     width: 100%;
@@ -179,17 +204,18 @@ main {
     background-size: none;
     background-repeat: none;
     background-attachment: none;
-    height: 450px;
+    margin-block: 20px;
+    height: 100%;
   }
   .main_formulario_2 {
     width: 100%;
     justify-content: center;
   }
   .formulario {
-    width: 50%;
+    width: 75%;
     justify-content: center;
     margin: 10px;
-    position: none;
+    position: relative;
   }
 }
 @media screen and (max-width: 768px) {
@@ -200,6 +226,7 @@ main {
     justify-content: center;
   }
   .contenedor-menu {
-    gap: 5rem;
+    gap: 4rem;
+    padding-left: 0;
   }
 }/*# sourceMappingURL=main.css.map */

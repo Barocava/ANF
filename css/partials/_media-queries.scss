@@ -5,15 +5,31 @@
     }
 }
 
+@media screen and (max-width: 700px) {
+  .mision {
+    width: 90%;
+    margin: 0.5rem;
+    margin-top: 1.5rem;
+  }
+  .tamano_boton {
+    font-size: 1rem;
+  }
+  .collage {
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
+}
+
 // contacto
 @media screen and (max-width: 1030px) {
+
     .main_formulario {
         width: 100%;
         background-image: none;
         background-size: none;
         background-repeat: none;
         background-attachment: none;
-        height: 450px;
+        margin-block: 20px;
+        height: 100%;
     }
 
     .main_formulario_2 {
@@ -22,10 +38,10 @@
     }
 
     .formulario {
-        width: 50%;
+        width: 75%;
         justify-content: center;
         margin: 10px;
-        position: none;
+        position: relative;
     }
 }
 
@@ -40,6 +56,7 @@
   }
 
   .contenedor-menu {
-    gap: 5rem;
+    gap: 4rem;
+    padding-left: 0;
   }
 }
