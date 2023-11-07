@@ -17,6 +17,13 @@
   .collage {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   }
+  .efecto {
+    &:hover {
+      
+      transform: scale(2) !important;
+
+    }
+  }
 }
 
 // contacto
@@ -43,6 +50,7 @@
         margin: 10px;
         position: relative;
     }
+
 }
 
 // footer
