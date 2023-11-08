@@ -141,6 +141,10 @@ main {
   max-width: 1300px;
 }
 
+.efecto {
+  transition: 1s;
+}
+
 .col {
   min-width: 350px;
   width: 300px;
@@ -195,6 +199,11 @@ main {
   }
   .collage {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  }
+}
+@media screen and (min-width: 700px) {
+  .efecto:hover {
+    transform: scale(1.25);
   }
 }
 @media screen and (max-width: 1030px) {

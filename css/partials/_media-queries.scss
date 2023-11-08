@@ -17,10 +17,13 @@
   .collage {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   }
+}
+
+@media screen and (min-width: 700px) {
   .efecto {
     &:hover {
       
-      transform: scale(2) !important;
+      transform: scale(1.25);
 
     }
   }
