@@ -215,7 +215,7 @@ main {
     background-size: none;
     background-repeat: none;
     background-attachment: none;
-    height: 50%;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
