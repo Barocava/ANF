@@ -38,8 +38,11 @@
         background-size: none;
         background-repeat: none;
         background-attachment: none;
-        margin-block: 20px;
-        height: 100%;
+        //margin-block: 20px;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .main_formulario_2 {
