@@ -1,13 +1,22 @@
 .col {
-  min-width: 350px;
-  width: 300px;
+  min-width: 325px;
+
 }
 
 .card {
   img {
     min-height: 250px;
+    object-fit: cover;
   }
 }
+
+.carta {
+  .card {
+    width: 325px;
+    height: 500px;
+  }
+}
+
 
 .carousel-item img {
   height: 70vh; /* Ajusta esto a la altura que desees */

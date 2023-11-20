@@ -1,27 +1,65 @@
 .main_formulario {
   width: $ancho-maximo;
-  background-image: url("../img/contacto.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   margin: 0;
-  height: 100vh;
+  min-height: 100vh;
 }
 
-.main_formulario_2 {
-  width: 33%;
+.banner-titulo {
+
+  width: 100%;
   display: flex;
-  justify-content: left;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  padding:1rem;
+  padding-block:2rem;
+  background-color: whitesmoke;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #3159d6;
+  }
+}
+
+.banner-contacto {
+  display:grid;
+  grid-template-columns:repeat(12, 0.5fr);
+  grid-template-rows: repeat(5, 8rem);
+  margin: 20px;
+  
+  img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .banner-img-1{
+    grid-column: 6/11;
+    grid-row: 1/5;
+  }
+
+  .banner-img-2 {
+    grid-column: 8/13;
+    grid-row: 3;
+  }
+  
 }
 
 .formulario {
-  display: flex;
-  width: 25%;
-  flex-direction: column;
-  justify-content: left;
-  position: absolute;
-  /* top: 80; 
-    left: 30; */
-  margin: 20px;
-  margin-left: 150px;
+  grid-column: 1/5
 }
+
+

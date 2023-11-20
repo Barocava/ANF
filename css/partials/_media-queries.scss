@@ -1,8 +1,8 @@
 // acerca
 @media screen and (max-width: $ancho-maximo) {
-    .contenedor {
-        width: 100%;
-    }
+  .contenedor {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -17,46 +17,58 @@
   .collage {
     grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
   }
+
+  .info {
+    .firma {
+      .acerca_cartas {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
 }
 
 @media screen and (min-width: 700px) {
   .efecto {
     &:hover {
-      
       transform: scale(1.25);
-
     }
   }
 }
 
 // contacto
+
+@media screen and (max-width: 1300px) {
+  .main_formulario {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1030px) {
+  .banner-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 4rem;
+    margin-inline: 8rem;
+  }
 
-    .main_formulario {
-        width: 100%;
-        background-image: none;
-        background-size: none;
-        background-repeat: none;
-        background-attachment: none;
-        //margin-block: 20px;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+  .main_formulario {
+    div img {
+      width: 0;
+      height: 0;
     }
+  }
+}
 
-    .main_formulario_2 {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .formulario {
-        width: 75%;
-        justify-content: center;
-        margin: 10px;
-        position: relative;
-    }
-
+@media screen and (max-width: 700px) {
+  .banner-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-inline: 1rem;
+  }
 }
 
 // footer
