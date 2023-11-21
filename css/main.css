@@ -55,6 +55,7 @@ main {
   border: 2px solid black;
   border-radius: 10px;
   margin: 1rem;
+  transition: box-shadow 0.3s ease;
 }
 .info .firma .acerca_cartas .acerca_cartas_img {
   width: 50%;
@@ -239,6 +240,7 @@ main {
 .carta .card {
   width: 325px;
   height: 500px;
+  transition: box-shadow 0.3s ease;
 }
 
 .carousel-item img {
@@ -301,6 +303,21 @@ main {
 @media screen and (min-width: 700px) {
   .efecto:hover {
     transform: scale(1.25);
+  }
+  .info .firma .acerca_cartas:hover {
+    box-shadow: 10px 10px 5px grey;
+    /*
+    .acerca_cartas_img {
+      width: 100%;
+      object-position: none;
+    }
+    .acerca_cartas_texto {
+      display: none;
+    }
+    */
+  }
+  .carta .card:hover {
+    box-shadow: 10px 10px 5px grey;
   }
 }
 @media screen and (max-width: 1300px) {

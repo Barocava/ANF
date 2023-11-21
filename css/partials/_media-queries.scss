@@ -26,13 +26,30 @@
       }
     }
   }
-
 }
 
 @media screen and (min-width: 700px) {
   .efecto {
     &:hover {
       transform: scale(1.25);
+    }
+  }
+  .info {
+    .firma {
+      .acerca_cartas {
+        &:hover {
+          box-shadow: 10px 10px 5px grey;
+        }
+      }
+    }
+  }
+
+  .carta {
+    .card {
+      &:hover {
+        box-shadow: 10px 10px 5px grey;
+        box
+      }
     }
   }
 }
